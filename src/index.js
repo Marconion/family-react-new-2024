@@ -1,13 +1,52 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ThemeProvider } from "@mui/material";
+import { Theme } from "./components/Theme";
+import {
+  createBrowserRouter,
+  createHashRouter,
+  RouterProvider,
+} from "react-router-dom";
+import { GalleryPage } from "./components/GalleryPage";
+import { PonudaPage } from "./components/PonudaPage";
+import { Onama } from "./components/Onama";
+import { Kontakt } from "./components/Kontakt";
+// import NotFoundPage from "./components/NotFoundPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  },
+  {
+    path: "/galerija",
+    element: <GalleryPage />,
+  },
+  {
+    path: "/ponuda",
+    element: <PonudaPage />,
+  },
+  {
+    path: "/onama",
+    element: <Onama />,
+  },
+  {
+    path: "/kontakt",
+    element: <Kontakt />,
+  },
+  // errorElement: <NotFoundPage />,
+]);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={Theme}>
+      <RouterProvider router={router} />
+      {/* <App /> */}
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -1,31 +1,31 @@
-.App {
-  text-align: center;
+body {
+  background-color: #fbfada;
+
+  /* background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"); */
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img {
+  filter: drop-shadow(10px 0 2rem #12372a);
+  height: 550px;
+
+  /* padding: 10px 0; */
+  /* filter: drop-shadow(0 0 2rem black); */
+}
+
+.image-container {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-container.fade-in {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +35,70 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
+  font-size: 1.25rem;
+  margin: 1.25rem 0;
+  color: #12372a;
+}
+
+#lokacija {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 50px 0;
+  background: url("/public/images/pexels-golden-jojo-2409038.jpg") no-repeat
+    center center/cover;
+  color: #fbfada;
+  h1 {
+    color: var(--color-secondary);
+    padding-bottom: 50px;
+  }
+  iframe {
+    padding-bottom: 50px;
+  }
+  p {
+    margin-bottom: 50px;
+    font-size: 15px;
+    color: #fbfada;
+    /* color: var(--color-secondary); */
+    text-align: center;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      margin-bottom: 0px;
+    }
+    .social-media-links {
+      a {
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 30px;
+        color: #fbfada;
+        transition: all 0.2s ease-in-out;
+      }
+      a:hover {
+        color: white;
+        scale: 1.2;
+      }
+    }
+  }
+}
+
+.divider {
+  padding-bottom: 30px;
+  width: 80%;
+}
+
+.divider-1 {
+  width: 80%;
 }
