@@ -4,11 +4,17 @@ import { Divider } from "./Divider";
 import { useEffect } from "react";
 import ImageFadeIn from "./ImageFadeIn";
 import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
+import { quotes } from "./Quotes";
+// import { RandomQuote } from "./Quotes";
 
 export const Feed = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
   }, []); // This effect runs only once when the component mounts
+
+  let randomIndex = Math.floor(Math.random() * 4 + 1);
+  console.log(randomIndex);
+
   return (
     <div>
       <Stack
@@ -22,17 +28,15 @@ export const Feed = () => {
           <Typography variant="h5">
             Dobrodošli na oficijalnu stranicu
           </Typography>
-          {/* <Typography variant="h2">"Family Event Place"</Typography> */}
           <Divider />
         </Box>
-        {/* <img height={"350px"} src="/images/Family logo gold.png" alt="logo" /> */}
         <ImageFadeIn src={logo} />
-        {/* <img
-          className="img"
-          height={"550px"}
-          src="./images/Logo uspravni sa poz.jpeg"
-          alt="logo"
-        /> */}
+        <Divider />
+        <Box maxWidth={"70%"}>
+          <Typography variant="h6" sx={{ fontStyle: "italic" }}>
+            "{quotes[randomIndex].quote}"
+          </Typography>
+        </Box>
         <Divider />
       </Stack>
       <Stack sx={{ color: "secondary" }}>
