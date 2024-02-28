@@ -102,3 +102,7 @@ footer {
 .divider-1 {
   width: 80%;
 }
+
+.custom-divider {
+  transform: rotate(180deg);
+}

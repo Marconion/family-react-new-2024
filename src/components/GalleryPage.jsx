@@ -203,7 +203,7 @@ export const GalleryPage = () => {
             </ImageListItem>
           ))}
         </ImageList>
-        <Divider />
+        <Divider className={"custom-divider"} />
       </Stack>
       <ScrollButton />
       <Footer />

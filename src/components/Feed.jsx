@@ -37,7 +37,7 @@ export const Feed = () => {
             "{quotes[randomIndex].quote}"
           </Typography>
         </Box>
-        <Divider />
+        <Divider className={"custom-divider"} />
       </Stack>
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">

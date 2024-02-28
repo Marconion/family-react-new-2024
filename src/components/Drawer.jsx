@@ -59,7 +59,7 @@ export const RightDrawer = () => {
             <Stack paddingTop={"60px"} alignItems={"center"}>
               <img height={"auto"} width={"110px"} src={logo} alt="logo" />
             </Stack>
-            <Divider />
+            <Divider className={"custom-divider"} />
           </Stack>
         </Box>
       </Drawer>

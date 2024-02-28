@@ -42,7 +42,7 @@ export const Kontakt = () => {
             E-mail adresa: <br />
             familyeventplace@gmail.com <br />
           </p>
-          <Divider className="divider-1" />
+          <Divider className="divider-1 custom-divider" />
           <div class="social">
             <div>
               <p>Možete nas kontaktirati i klikom na linkove ispod</p>

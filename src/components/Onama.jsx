@@ -116,7 +116,7 @@ export const Onama = () => {
             </CardActions>
           </Card>
         </Stack>
-        <Divider />
+        <Divider className={"custom-divider"} />
       </Stack>
       <Footer />
     </div>
