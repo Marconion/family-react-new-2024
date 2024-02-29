@@ -6,6 +6,8 @@ import {
   ImageList,
   ImageListItem,
   useMediaQuery,
+  Fade,
+  Grow,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
@@ -181,6 +183,8 @@ export const GalleryPage = () => {
 
   return (
     <div>
+      <Navbar />
+
       <Stack flex={1} alignItems={"center"} m={5}>
         <Typography variant="h4" color={"#12372A"}>
           Galerija
@@ -196,9 +200,11 @@ export const GalleryPage = () => {
             margin: { md: "50px", lg: "250px" },
           }}>
           {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <ImageModal image={item.img} title={item.title} />
-            </ImageListItem>
+            <Grow in timeout={1000}>
+              <ImageListItem key={item.img}>
+                <ImageModal image={item.img} title={item.title} />
+              </ImageListItem>
+            </Grow>
           ))}
         </ImageList>
         <Divider className={"custom-divider"} />

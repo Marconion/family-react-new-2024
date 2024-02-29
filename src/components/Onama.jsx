@@ -33,6 +33,7 @@ export const Onama = () => {
 
   return (
     <div>
+      <Navbar />
       <Stack flex={1} alignItems={"center"} m={5}>
         {/* <img
           style={{ width: "100%", padding: "2rem" }}

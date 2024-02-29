@@ -1,10 +1,11 @@
 import { Stack, Typography, Box } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { Divider } from "./Divider";
 import { useEffect } from "react";
 import ImageFadeIn from "./ImageFadeIn";
 import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
 import { quotes } from "./Quotes";
+import { Navbar } from "./Navbar";
 // import { RandomQuote } from "./Quotes";
 
 export const Feed = () => {
@@ -12,7 +13,7 @@ export const Feed = () => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
   }, []); // This effect runs only once when the component mounts
 
-  let randomIndex = Math.floor(Math.random() * 4 + 1);
+  let randomIndex = Math.floor(Math.random() * 5 + 1);
   console.log(randomIndex);
 
   return (

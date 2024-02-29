@@ -19,4 +19,8 @@ export const quotes = [
     quote:
       "Proslave su prilika za stvaranje trajnih uspomena - dozvolite nam da vam pomognemo da stvorite nezaboravno iskustvo u našem prelepom prostoru za proslave.",
   },
+  {
+    quote:
+      "Budite domaćin nezaboravnoj proslavi u našem elegantnom prostoru - prepustite nam organizaciju i uživajte u svakom trenutku sa vašim gostima.",
+  },
 ];
