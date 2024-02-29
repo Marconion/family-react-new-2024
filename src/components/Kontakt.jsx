@@ -22,7 +22,7 @@ export const Kontakt = () => {
           {/* <Stack sx={{ margin: "0 0 20px 0" }}> */}
           <Divider className="divider" />
           {/* </Stack> */}
-          <Fade in timeout={1000}>
+          <Fade in timeout={2000}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1734.1860874442618!2d20.435779728292133!3d44.74993840452094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7176a56fdde7%3A0xe5c162c5653e009b!2sFamily%20Event%20Place!5e0!3m2!1ssr!2srs!4v1682285491176!5m2!1ssr!2srs"
               style={{

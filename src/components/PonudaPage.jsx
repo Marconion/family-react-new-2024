@@ -197,13 +197,7 @@ export const PonudaPage = () => {
   }, []);
 
   const [meni, setMeni] = useState(ponuda[0]);
-  const [index, setIndex] = useState();
-
-  function handleClick() {
-    setIndex();
-  }
-
-  function setClass() {}
+  const [index, setIndex] = useState(0);
 
   return (
     <div>
