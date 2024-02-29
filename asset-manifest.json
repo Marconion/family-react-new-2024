@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/family-react-new-2024/static/css/main.b06a0607.css",
-    "main.js": "/family-react-new-2024/static/js/main.4efbc640.js",
+    "main.js": "/family-react-new-2024/static/js/main.d28f95c5.js",
     "static/js/453.dd53e008.chunk.js": "/family-react-new-2024/static/js/453.dd53e008.chunk.js",
     "static/media/pexels-golden-jojo-2409038.jpg": "/family-react-new-2024/static/media/pexels-golden-jojo-2409038.e88a745bc273b6f23d23.jpg",
     "static/media/Logo uspravni sa poz.jpeg": "/family-react-new-2024/static/media/Logo uspravni sa poz.d7b24ce78940bdfcc7b6.jpeg",
@@ -12,11 +12,11 @@
     "static/media/old divider swirl ornate floral.png": "/family-react-new-2024/static/media/old divider swirl ornate floral.a9aa05b2c807564935cc.png",
     "index.html": "/family-react-new-2024/index.html",
     "main.b06a0607.css.map": "/family-react-new-2024/static/css/main.b06a0607.css.map",
-    "main.4efbc640.js.map": "/family-react-new-2024/static/js/main.4efbc640.js.map",
+    "main.d28f95c5.js.map": "/family-react-new-2024/static/js/main.d28f95c5.js.map",
     "453.dd53e008.chunk.js.map": "/family-react-new-2024/static/js/453.dd53e008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b06a0607.css",
-    "static/js/main.4efbc640.js"
+    "static/js/main.d28f95c5.js"
   ]
 }
