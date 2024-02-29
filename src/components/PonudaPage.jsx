@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import { Typography, Stack, Button } from "@mui/material";
+import { Typography, Stack } from "@mui/material";
 import { useState, useEffect } from "react";
 import { Footer } from "./Footer";
 import { Divider } from "./Divider";
@@ -207,6 +207,10 @@ export const PonudaPage = () => {
           Ponuda
         </Typography>
         <Divider />
+        <Typography variant="h8">
+          Kliknite na meni i na trajanje da bi dobili cenu
+        </Typography>
+        <br />
         <Stack direction={"row"} spacing={3}>
           <button
             className={index === 0 ? "active" : ""}
@@ -231,6 +235,26 @@ export const PonudaPage = () => {
               setIndex(2);
             }}>
             Set meni 3
+          </button>
+        </Stack>
+        <br />
+        <Typography variant="h6">Proslava od:</Typography>
+        <Stack direction={"row"} spacing={3}>
+          <button
+            className={index === 1 ? "active" : ""}
+            onClick={() => {
+              setMeni(ponuda[1]); // First function call
+              setIndex(1); // Second function call
+            }}>
+            3 sata
+          </button>
+          <button
+            className={index === 2 ? "active" : ""}
+            onClick={() => {
+              setMeni(ponuda[2]);
+              setIndex(2);
+            }}>
+            6 sati
           </button>
         </Stack>
 

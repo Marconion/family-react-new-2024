@@ -43,6 +43,43 @@ export const Onama = () => {
           O nama
         </Typography>
         <Divider />
+        <Typography variant="h8" textAlign={"center"}>
+          Family event place je restoran namenjen organizovanju svih vrsta
+          porodicnih proslava od 30 do 150 gostiju. U mogucnosti smo da
+          organizujemo sve vrste proslava, od decijih rodjendana i krstenja do
+          svadbi i korporativnih proslava.
+          <br />
+          <br />
+          Smesten je na samoj ivici Kosutnjaka, na osuncanoj padini koja pruza
+          fantastican pogled od kojeg zastaje dah.
+          <br />
+          <br />
+          Family restoran je jedinstven prostor za slavlja u gradu jer Vam pruza
+          mogucnost izbora u kakvom cete okruzenju organizovati vas svecani dan.
+          <br />
+          <br />
+          Na raspolqganju su vam dve moderno opremljene zatvorene sale. Velika
+          sala je kapaciteta do 100 gostiju, a mala sala je kapaciteta do 50
+          gostiju. Sale su medjusobno povezane sto omogucava i organizaciju
+          vecih  proslava do 150 gostiju.
+          <br />
+          <br />
+          Ono sto vam je takodje na raspolaganju, a nas razlikuje od drugih
+          ptostora ovog tipa su i otvorena terasa sa ocaravajucim pogledom na
+          Avalu, kapaciteta do 50 gostiju. Kruna nase ponude je nasa zelena
+          oaza, nas vrt, kapaciteta do 50 gostiju.
+          <br />
+          <br />
+          Ovaj prostor je potpuno opremljen za hedonisticko uzivanje sa osecajem
+          bega iz gradske vreve.
+          <br />
+          <br />
+          Za najmladje i najbitnije goste Family event place je spremio posebno
+          iznenadjenje. Na raspolaganju vam je potpuno opremljena decija
+          igraonica od 70m2, sa profesionalnim animatorima koji ce im svaki
+          trenutak proveden u nasem restoranu uciniti nezaboravnim.
+        </Typography>
+        <Divider />
         <Stack spacing={3} direction={direction}>
           <Card sx={{ maxWidth: 345 }}>
             <CardMedia sx={{ height: 300 }} image={velikaSalaImg} title="img" />

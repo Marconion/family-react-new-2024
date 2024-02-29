@@ -6,7 +6,6 @@ import {
   ImageList,
   ImageListItem,
   useMediaQuery,
-  Fade,
   Grow,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
