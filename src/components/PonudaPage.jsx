@@ -10,7 +10,7 @@ const ponuda = [
   [
     <>
       <set-1>
-        <h2 class="set-pos">Set meni 1 (32e)</h2>
+        <h2 class="set-pos">Cena: 32 evra</h2>
       </set-1>
       <p class="p-3">Ponuda hrane</p>
       <ul>
@@ -61,7 +61,7 @@ const ponuda = [
   [
     <>
       <set-2>
-        <h2 class="set-pos">Set meni 2 (38e)</h2>
+        <h2 class="set-pos">Cena: 38 evra</h2>
       </set-2>
       <p class="p-3">Ponuda hrane</p>
       <ul>
@@ -122,7 +122,7 @@ const ponuda = [
   [
     <>
       <set-3>
-        <h2 class="set-pos">Set meni 3 (50e)</h2>
+        <h2 class="set-pos">Cena: 50 evra</h2>
       </set-3>
       <p class="p-3">Ponuda hrane</p>
       <ul>
@@ -197,10 +197,13 @@ export const PonudaPage = () => {
   }, []);
 
   const [meni, setMeni] = useState(ponuda[0]);
+  const [index, setIndex] = useState();
 
   function handleClick() {
-    setMeni(ponuda[meni]);
+    setIndex();
   }
+
+  function setClass() {}
 
   return (
     <div>
@@ -212,18 +215,27 @@ export const PonudaPage = () => {
         <Divider />
         <Stack direction={"row"} spacing={3}>
           <button
-            className={meni === 0 ? "active" : ""}
-            onClick={() => setMeni(ponuda[0])}>
+            className={index === 0 ? "active" : ""}
+            onClick={() => {
+              setMeni(ponuda[0]);
+              setIndex(0);
+            }}>
             Set meni 1
           </button>
           <button
-            className={meni === 1 ? "active" : ""}
-            onClick={() => setMeni(ponuda[1])}>
+            className={index === 1 ? "active" : ""}
+            onClick={() => {
+              setMeni(ponuda[1]); // First function call
+              setIndex(1); // Second function call
+            }}>
             Set meni 2
           </button>
           <button
-            className={meni === 2 ? "active" : ""}
-            onClick={() => setMeni(ponuda[2])}>
+            className={index === 2 ? "active" : ""}
+            onClick={() => {
+              setMeni(ponuda[2]);
+              setIndex(2);
+            }}>
             Set meni 3
           </button>
         </Stack>
