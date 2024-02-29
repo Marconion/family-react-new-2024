@@ -117,7 +117,7 @@ const ponuda = [
       <ul>
         <li>
           Mešano meso (Ćevapi , Dimljena vešalica, Kobasice, Rolovani pileći
-          file, Piledi štapići sa susamom)
+          file, Pileći štapići sa susamom)
         </li>
         <li>Ćuretina u sosu sa vrganjima</li>
         <li>Svinjski file u lešniku sa sosom od višanja</li>
