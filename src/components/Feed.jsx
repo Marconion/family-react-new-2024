@@ -9,6 +9,8 @@ import { Navbar } from "./Navbar";
 // import { RandomQuote } from "./Quotes";
 
 export const Feed = () => {
+  const [logoLoaded, setLogoLoaded] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
   }, []); // This effect runs only once when the component mounts
@@ -31,7 +33,11 @@ export const Feed = () => {
           </Typography>
           <Divider />
         </Box>
-        <ImageFadeIn src={logo} />
+        <ImageFadeIn
+          src={logo}
+          onLoad={() => setLogoLoaded(true)}
+          style={{ display: logoLoaded ? "block" : "none" }}
+        />
         <Divider />
         <Box maxWidth={"70%"}>
           <Typography variant="h6" sx={{ fontStyle: "italic" }}>
