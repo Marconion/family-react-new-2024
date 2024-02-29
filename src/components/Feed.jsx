@@ -1,4 +1,4 @@
-import { Stack, Typography, Box } from "@mui/material";
+import { Stack, Typography, Box, Button } from "@mui/material";
 import React, { useState } from "react";
 import { Divider } from "./Divider";
 import { useEffect } from "react";
@@ -6,6 +6,7 @@ import ImageFadeIn from "./ImageFadeIn";
 import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
 import { quotes } from "./Quotes";
 import { Navbar } from "./Navbar";
+import { Link } from "react-router-dom";
 // import { RandomQuote } from "./Quotes";
 
 export const Feed = () => {
@@ -36,6 +37,9 @@ export const Feed = () => {
             Dobrodošli na oficijalnu stranicu
           </Typography> */}
           <Divider className={"custom-divider"} />
+          <Link to="/kontakt">
+            <Button variant="contained">Rezervišite</Button>
+          </Link>
         </Box>
         <ImageFadeIn
           src={logo}

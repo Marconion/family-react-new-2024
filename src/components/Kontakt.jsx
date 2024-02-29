@@ -17,10 +17,20 @@ export const Kontakt = () => {
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">
           <div style={{ textAlign: "center" }}>
-            <Typography variant="h5">Naša lokacija</Typography>
+            <Typography variant="h5">Kontakt i naša lokacija</Typography>
           </div>
           {/* <Stack sx={{ margin: "0 0 20px 0" }}> */}
           <Divider className="divider" />
+          <p>
+            Adresa: <br />
+            Luke Vojvodića 18i <br />
+            <br />
+            Kontakt telefon: <br />
+            064/90-60-064 <br />
+            <br />
+            E-mail adresa: <br />
+            familyeventplace@gmail.com <br />
+          </p>
           {/* </Stack> */}
           <Fade in timeout={2000}>
             <iframe
@@ -34,16 +44,6 @@ export const Kontakt = () => {
                 referrerpolicy: "no-referrer-when-downgrade",
               }}></iframe>
           </Fade>
-          <p>
-            Adresa: <br />
-            Luke Vojvodića 18i <br />
-            <br />
-            Kontakt telefon: <br />
-            064/90-60-064 <br />
-            <br />
-            E-mail adresa: <br />
-            familyeventplace@gmail.com <br />
-          </p>
           <Divider className="divider-1 custom-divider" />
           <div class="social">
             <div>
