@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useRef } from "react";
 import { Navbar } from "./Navbar";
 import {
   Typography,
@@ -22,24 +22,50 @@ export const GalleryPage = () => {
       img: "./images/gallery-img/Family-1.jpg",
       title: "img",
     },
+
+    {
+      img: "./images/gallery-img/Family-7.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-8.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-9.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-10.jpg",
+      title: "img",
+    },
+
+    {
+      img: "./images/gallery-img/Family-15.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-16.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-17.jpg",
+      title: "img",
+    },
+
+    {
+      img: "./images/gallery-img/Family-36.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-37.jpg",
+      title: "img",
+    },
+  ];
+
+  const velikaSalaImages = [
     {
       img: "./images/gallery-img/Family-2.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-3.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-4.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-5.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-6.jpg",
       title: "img",
     },
     {
@@ -72,18 +98,6 @@ export const GalleryPage = () => {
     },
     {
       img: "./images/gallery-img/Family-14.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-15.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-16.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-17.jpg",
       title: "img",
     },
     {
@@ -126,6 +140,9 @@ export const GalleryPage = () => {
       img: "./images/gallery-img/Family-27.jpg",
       title: "img",
     },
+  ];
+
+  const malaSalaImages = [
     {
       img: "./images/gallery-img/Family-28.jpg",
       title: "img",
@@ -136,10 +153,6 @@ export const GalleryPage = () => {
     },
     {
       img: "./images/gallery-img/Family-30.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-31.jpg",
       title: "img",
     },
     {
@@ -159,19 +172,26 @@ export const GalleryPage = () => {
       title: "img",
     },
     {
-      img: "./images/gallery-img/Family-36.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-37.jpg",
-      title: "img",
-    },
-    {
       img: "./images/gallery-img/Family-38.jpg",
       title: "img",
     },
   ];
-  console.log(itemData);
+
+  const igraonicaImages = [
+    {
+      img: "./images/gallery-img/Family-4.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-5.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-6.jpg",
+      title: "img",
+    },
+  ];
+
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isSmallScreen ? 2 : 3;
@@ -190,15 +210,64 @@ export const GalleryPage = () => {
         </Typography>
         <Divider />
 
+        {/* VELIKA SALA */}
+        <div id="velika-sala">
+          <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
+            <Typography variant="h4">Velika sala</Typography>
+          </Stack>
+          <ImageList
+            variant="quilted"
+            cols={cols}
+            gap={8}
+            sx={{
+              display: { md: "flexbox", lg: "flexbox" },
+              margin: { md: "50px", lg: "50px" },
+            }}>
+            {velikaSalaImages.map((item) => (
+              <Grow in timeout={1000}>
+                <ImageListItem key={item.img}>
+                  <ImageModal image={item.img} title={item.title} />
+                </ImageListItem>
+              </Grow>
+            ))}
+          </ImageList>
+        </div>
+        {/* MALA SALA */}
+        <div id="mala-sala">
+          <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
+            <Typography variant="h4">Mala sala</Typography>
+          </Stack>
+          <ImageList
+            variant="quilted"
+            cols={cols}
+            gap={8}
+            sx={{
+              display: { md: "flexbox", lg: "flexbox" },
+              margin: { md: "50px", lg: "50px" },
+            }}>
+            {malaSalaImages.map((item) => (
+              <Grow in timeout={1000}>
+                <ImageListItem key={item.img}>
+                  <ImageModal image={item.img} title={item.title} />
+                </ImageListItem>
+              </Grow>
+            ))}
+          </ImageList>
+        </div>
+
+        {/* IGRAONICA */}
+        <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
+          <Typography variant="h4">Igraonica</Typography>
+        </Stack>
         <ImageList
           variant="quilted"
           cols={cols}
           gap={8}
           sx={{
             display: { md: "flexbox", lg: "flexbox" },
-            margin: { md: "50px", lg: "250px" },
+            margin: { md: "50px", lg: "50px" },
           }}>
-          {itemData.map((item) => (
+          {igraonicaImages.map((item) => (
             <Grow in timeout={1000}>
               <ImageListItem key={item.img}>
                 <ImageModal image={item.img} title={item.title} />

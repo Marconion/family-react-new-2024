@@ -12,20 +12,19 @@ const ponuda = [
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
-          Mešano meso (Ćevapi , Kobasice, Svinjski vrat, Pileći štapići sa
-          susamom)
+          Mešano meso (Ćevapi , Kobasice, Rolovani pileći file, Pileći štapići
+          sa susamom)
         </li>
         <li>Selekcija suvomesnatog (Suva pečenica, Suvi vrat, Kulen)</li>
         <li>Selekcija sireva (Sjenički sir, Gauda, Kajmak)</li>
         <li>Dve vrste slanog rolata (Zeleni i Crveni)</li>
-        <li>Domaća pita sa sirom</li>
+        <li>Domaće pita sa sirom i pečurkama</li>
         <li>Proja</li>
-        <li>Španska pita</li>
         <li>Mimoza salata</li>
         <li>Urnebes salata</li>
-        <li>Kupus salata</li>
-        <li>Vitaminska salata</li>
-        <li>Pomfrit</li>
+        <li>Bašta salata</li>
+        <li>Pomfrit, začinjene kriške krompira</li>
+        <li>Sarajevski somuni, baget</li>
       </ul>
       <p class="p-3">Ponuda pića</p>
       <ul>
@@ -76,13 +75,12 @@ const ponuda = [
         <li>Italijanski štapići - Čeri, mozzarella, masline</li>
         <li>Domaće pite sa sirom i pečurkama</li>
         <li>Proja</li>
-        <li>Španska pita</li>
         <li>Mimoza salata</li>
         <li>Grčka salata</li>
         <li>Urnebes salata</li>
-        <li>Kupus salata</li>
-        <li>Vitaminska salata</li>
+        <li>Bašta salata</li>
         <li>Pomfrit, Začinjeni krompir</li>
+        <li>Sarajevski somuni, baget</li>
       </ul>
       <p class="p-3">Ponuda pića</p>
       <ul>
@@ -121,16 +119,17 @@ const ponuda = [
           Mešano meso (Ćevapi , Dimljena vešalica, Kobasice, Rolovani pileći
           file, Piledi štapići sa susamom)
         </li>
-        <li>Rolovana ćuretina na pireu sa tartufima</li>
+        <li>Ćuretina u sosu sa vrganjima</li>
         <li>Svinjski file u lešniku sa sosom od višanja</li>
         <li>
           Selekcija suvomesnatog (Suva svinjska pečenica, Goveđa pršuta,
           Svinjska pršuta, Suvi vrat, Kulen)
         </li>
         <li>
-          Selekcija sireva (Sjenički sir, Gauda, Gorgonzola, Parmezan, Kajmak)
+          Selekcija sireva (Sjenički sir, Gauda, Camembert, Gorgonzola,
+          Parmezan, Kajmak)
         </li>
-        <li>Tri vrste slanog rolata - Beli, zeleni, crveni</li>
+        <li>Dve vrste slanog rolata - (Zeleni i Crveni) </li>
         <li>
           Finger food mix - tortilja sa piletinom, prolećne rolnice, kanapei sa
           lososom, grisini sa pršutom
@@ -138,14 +137,14 @@ const ponuda = [
         <li>Italijanski štapići - Čeri, mozzarella, masline</li>
         <li>Domaće pite sa sirom i pečurkama</li>
         <li>Proja</li>
-        <li>Španska pita</li>
         <li>Mimoza salata</li>
         <li>Grčka salata</li>
         <li>Caprese salata</li>
         <li>Urnebes salata</li>
-        <li>Kupus salata</li>
-        <li>Vitaminska salata</li>
+        <li>Bašta salata</li>
         <li>Grilovano povrće, Pomfrit, Začinjeni krompir</li>
+        <li>Domaća pogača</li>
+        <li>Sarajevski somuni, baget</li>
       </ul>
       <p class="p-3">Ponuda pića</p>
       <ul>
@@ -196,9 +195,9 @@ export const PonudaPage = () => {
   useEffect(() => {
     // Mapiranje indeksa menija i trajanja na odgovarajuću cenu iz ponude
     const cenaMap = {
-      0: { 0: 32, 1: 40 }, // Cena za prvi meni
-      1: { 0: 38, 1: 45 }, // Cena za drugi meni
-      2: { 0: 50, 1: 60 }, // Cena za treći meni
+      0: { 0: 25, 1: 32 }, // Cena za prvi meni
+      1: { 0: 30, 1: 38 }, // Cena za drugi meni
+      2: { 0: 35, 1: 50 }, // Cena za treći meni
     };
 
     // Ažuriranje cene na osnovu trenutno odabranih menija i trajanja proslave
