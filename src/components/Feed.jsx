@@ -28,23 +28,21 @@ export const Feed = () => {
         padding={"0.5rem"}
         alignItems={"center"}>
         <Box sx={{ padding: "0 30px" }}>
-          <Typography variant="h5">
-            Dobrodošli na oficijalnu stranicu
-          </Typography>
           <Divider />
+          <Typography variant="h6" sx={{ fontStyle: "italic" }}>
+            "{quotes[randomIndex].quote}"
+          </Typography>
+          {/* <Typography variant="h5">
+            Dobrodošli na oficijalnu stranicu
+          </Typography> */}
+          <Divider className={"custom-divider"} />
         </Box>
         <ImageFadeIn
           src={logo}
           onLoad={() => setLogoLoaded(true)}
           style={{ display: logoLoaded ? "block" : "none" }}
         />
-        <Divider />
-        <Box maxWidth={"70%"}>
-          <Typography variant="h6" sx={{ fontStyle: "italic" }}>
-            "{quotes[randomIndex].quote}"
-          </Typography>
-        </Box>
-        <Divider className={"custom-divider"} />
+        <Box maxWidth={"70%"}></Box>
       </Stack>
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">
