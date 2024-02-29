@@ -181,8 +181,6 @@ export const GalleryPage = () => {
 
   return (
     <div>
-      <Navbar />
-
       <Stack flex={1} alignItems={"center"} m={5}>
         <Typography variant="h4" color={"#12372A"}>
           Galerija

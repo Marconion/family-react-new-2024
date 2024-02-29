@@ -1,12 +1,6 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import {
-  Typography,
-  Stack,
-  ImageList,
-  ImageListItem,
-  Button,
-} from "@mui/material";
+import { Typography, Stack, Button } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer } from "./Footer";
@@ -194,7 +188,6 @@ export const PonudaPage = () => {
   }, []);
   return (
     <div>
-      <Navbar />
       <Stack flex={1} alignItems={"center"} m={5}>
         <Typography variant="h4" color={"#12372A"}>
           Ponuda

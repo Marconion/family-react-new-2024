@@ -13,7 +13,6 @@ export const Kontakt = () => {
 
   return (
     <div>
-      <Navbar />
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">
           <div style={{ textAlign: "center" }}>
