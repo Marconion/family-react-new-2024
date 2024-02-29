@@ -5,10 +5,8 @@ import { useEffect } from "react";
 import ImageFadeIn from "./ImageFadeIn";
 import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
 import { quotes } from "./Quotes";
-import { Navbar } from "./Navbar";
 import { Link } from "react-router-dom";
-import { hover } from "@testing-library/user-event/dist/hover";
-// import { RandomQuote } from "./Quotes";
+import familyVideo from "../components/assets/videos/Family-video.mp4";
 
 export const Feed = () => {
   const [logoLoaded, setLogoLoaded] = useState(false);
@@ -38,7 +36,6 @@ export const Feed = () => {
       <Stack
         spacing={5}
         textAlign={"center"}
-        marginTop={"1.5rem"}
         marginBottom={"6rem"}
         padding={"0.5rem"}
         alignItems={"center"}>
@@ -47,10 +44,13 @@ export const Feed = () => {
           <Typography variant="h7" sx={{ fontStyle: "italic" }}>
             "{quotes[randomIndex].quote}"
           </Typography>
-          {/* <Typography variant="h5">
-            Dobrodošli na oficijalnu stranicu
-          </Typography> */}
+
           <Divider className={"custom-divider"} />
+          <Stack marginBottom={"5rem"} alignItems={"center"}>
+            <video width={257} height={457} autoPlay loop muted>
+              <source src={familyVideo} type="video/mp4" />
+            </video>
+          </Stack>
           <Link to="/kontakt">
             <Button
               sx={styles.button}
@@ -63,12 +63,12 @@ export const Feed = () => {
             </Button>
           </Link>
         </Box>
-        <ImageFadeIn
+        {/* <ImageFadeIn
           src={logo}
           onLoad={() => setLogoLoaded(true)}
           style={{ display: logoLoaded ? "block" : "none" }}
-        />
-        <Box maxWidth={"70%"}></Box>
+        /> */}
+        {/* <Box maxWidth={"70%"}></Box> */}
       </Stack>
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">
