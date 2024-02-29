@@ -1,14 +1,17 @@
 import React from "react";
 import { Navbar } from "./Navbar";
 import { Typography, Stack, Button } from "@mui/material";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Footer } from "./Footer";
 import { Divider } from "./Divider";
+import { MeniButton } from "./MeniButton";
 
 const ponuda = [
   [
     <>
+      <set-1>
+        <h2 class="set-pos">Set meni 1 (32e)</h2>
+      </set-1>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -57,6 +60,9 @@ const ponuda = [
   ],
   [
     <>
+      <set-2>
+        <h2 class="set-pos">Set meni 2 (38e)</h2>
+      </set-2>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -115,6 +121,9 @@ const ponuda = [
   ],
   [
     <>
+      <set-3>
+        <h2 class="set-pos">Set meni 3 (50e)</h2>
+      </set-3>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -186,6 +195,13 @@ export const PonudaPage = () => {
     // 👇️ scroll to top on page load
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   }, []);
+
+  const [meni, setMeni] = useState(ponuda[0]);
+
+  function handleClick() {
+    setMeni(ponuda[meni]);
+  }
+
   return (
     <div>
       <Navbar />
@@ -194,60 +210,30 @@ export const PonudaPage = () => {
           Ponuda
         </Typography>
         <Divider />
-        <Typography>
-          <set-1>
-            <h2 class="set-pos">Set meni 1 (32e)</h2>
-            <>{ponuda[0]}</>
-          </set-1>
-          <div class="button-pos">
-            <Link to="/ponuda">
-              <Button
-                variant="contained"
-                style={{ color: "#FBFADA" }}
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}>
-                Povratak na početak
-              </Button>
-            </Link>
-          </div>
-          <Divider />
-          <set-2>
-            <h2 class="set-pos">Set meni 2 (38e)</h2>
-            <>{ponuda[1]}</>
-          </set-2>
-          <div class="button-pos">
-            <Link to="/ponuda">
-              <Button
-                variant="contained"
-                style={{ color: "#FBFADA" }}
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}>
-                Povratak na početak
-              </Button>
-            </Link>
-          </div>
-          <Divider />
-          <set-3>
-            <h2 class="set-pos">Set meni 3 (50e)</h2>
-            <>{ponuda[2]}</>
-          </set-3>
+        <Stack direction={"row"} spacing={3}>
+          <button
+            className={meni === 0 ? "active" : ""}
+            onClick={() => setMeni(ponuda[0])}>
+            Set meni 1
+          </button>
+          <button
+            className={meni === 1 ? "active" : ""}
+            onClick={() => setMeni(ponuda[1])}>
+            Set meni 2
+          </button>
+          <button
+            className={meni === 2 ? "active" : ""}
+            onClick={() => setMeni(ponuda[2])}>
+            Set meni 3
+          </button>
+        </Stack>
 
-          <div class="button-pos">
-            <Link to="/ponuda">
-              <Button
-                variant="contained"
-                style={{ color: "#FBFADA" }}
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}>
-                Povratak na početak
-              </Button>
-            </Link>
-          </div>
-          <Divider />
+        {/* Set meniji*/}
+        <Typography>
+          <p>{meni}</p>
         </Typography>
+        <MeniButton />
+        <Divider className={"custom-divider"} />
       </Stack>
       <Footer />
     </div>
