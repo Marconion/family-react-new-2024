@@ -213,7 +213,7 @@ export const PonudaPage = () => {
           Ponuda
         </Typography>
         <Divider />
-        <Typography variant="h8">
+        <Typography variant="h8" textAlign={"center"}>
           Kliknite na meni i na trajanje da bi dobili cenu
         </Typography>
         <br />
