@@ -9,9 +9,6 @@ import { MeniButton } from "./MeniButton";
 const ponuda = [
   [
     <>
-      <set-1>
-        <h2 class="set-pos">Cena: 32 evra</h2>
-      </set-1>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -60,9 +57,6 @@ const ponuda = [
   ],
   [
     <>
-      <set-2>
-        <h2 class="set-pos">Cena: 38 evra</h2>
-      </set-2>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -121,9 +115,6 @@ const ponuda = [
   ],
   [
     <>
-      <set-3>
-        <h2 class="set-pos">Cena: 50 evra</h2>
-      </set-3>
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
@@ -198,6 +189,21 @@ export const PonudaPage = () => {
 
   const [meni, setMeni] = useState(ponuda[0]);
   const [index, setIndex] = useState(0);
+  const [vreme, setVreme] = useState(0);
+  const [cena, setCena] = useState(32); // Inicijalna cena za prvi meni i 3 sata trajanja
+
+  // Funkcija za ažuriranje cene na osnovu trenutno odabranog menija i trajanja proslave
+  useEffect(() => {
+    // Mapiranje indeksa menija i trajanja na odgovarajuću cenu iz ponude
+    const cenaMap = {
+      0: { 0: 32, 1: 40 }, // Cena za prvi meni
+      1: { 0: 38, 1: 45 }, // Cena za drugi meni
+      2: { 0: 50, 1: 60 }, // Cena za treći meni
+    };
+
+    // Ažuriranje cene na osnovu trenutno odabranih menija i trajanja proslave
+    setCena(cenaMap[index][vreme]);
+  }, [index, vreme]); // Ponovno izračunavanje cene kada se promeni index ili vreme
 
   return (
     <div>
@@ -211,6 +217,8 @@ export const PonudaPage = () => {
           Kliknite na meni i na trajanje da bi dobili cenu
         </Typography>
         <br />
+
+        {/* MENI BUTTONS*/}
         <Stack direction={"row"} spacing={3}>
           <button
             className={index === 0 ? "active" : ""}
@@ -239,24 +247,30 @@ export const PonudaPage = () => {
         </Stack>
         <br />
         <Typography variant="h6">Proslava od:</Typography>
+
+        {/* VREME BUTTONS */}
         <Stack direction={"row"} spacing={3}>
           <button
-            className={index === 1 ? "active" : ""}
+            className={vreme === 0 ? "active" : ""}
             onClick={() => {
-              setMeni(ponuda[1]); // First function call
-              setIndex(1); // Second function call
+              setVreme(0); // Second function call
             }}>
             3 sata
           </button>
           <button
-            className={index === 2 ? "active" : ""}
+            className={vreme === 1 ? "active" : ""}
             onClick={() => {
-              setMeni(ponuda[2]);
-              setIndex(2);
+              setVreme(1);
             }}>
             6 sati
           </button>
         </Stack>
+
+        {/* Prikaz cene */}
+        <Typography>
+          <h1>Cena: {cena} evra</h1>
+        </Typography>
+        <Divider className={"custom-divider"} />
 
         {/* Set meniji*/}
         <Typography>

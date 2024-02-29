@@ -7,6 +7,7 @@ import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
 import { quotes } from "./Quotes";
 import { Navbar } from "./Navbar";
 import { Link } from "react-router-dom";
+import { hover } from "@testing-library/user-event/dist/hover";
 // import { RandomQuote } from "./Quotes";
 
 export const Feed = () => {
@@ -19,18 +20,31 @@ export const Feed = () => {
   let randomIndex = Math.floor(Math.random() * 5 + 1);
   console.log(randomIndex);
 
+  const styles = {
+    button: {
+      padding: "10px 20px",
+      marginBottom: "10px",
+      color: "#12372A",
+      "&:hover": { color: "#fbfada" },
+      backgroundColor: "transparent",
+      "&:hover": {
+        backgroundColor: "#fbfada",
+      },
+    },
+  };
+
   return (
     <div>
       <Stack
         spacing={5}
         textAlign={"center"}
-        marginTop={"3rem"}
+        marginTop={"1.5rem"}
         marginBottom={"6rem"}
         padding={"0.5rem"}
         alignItems={"center"}>
         <Box sx={{ padding: "0 30px" }}>
           <Divider />
-          <Typography variant="h6" sx={{ fontStyle: "italic" }}>
+          <Typography variant="h7" sx={{ fontStyle: "italic" }}>
             "{quotes[randomIndex].quote}"
           </Typography>
           {/* <Typography variant="h5">
@@ -38,7 +52,15 @@ export const Feed = () => {
           </Typography> */}
           <Divider className={"custom-divider"} />
           <Link to="/kontakt">
-            <Button variant="contained">Rezervišite</Button>
+            <Button
+              sx={styles.button}
+              variant="outlined"
+              style={{
+                marginBottom: "10px",
+                // color: "#fbfada",
+              }}>
+              Rezervišite
+            </Button>
           </Link>
         </Box>
         <ImageFadeIn
