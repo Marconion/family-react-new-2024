@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/family-react-new-2024/static/css/main.b06a0607.css",
-    "main.js": "/family-react-new-2024/static/js/main.7c9f7fea.js",
+    "main.js": "/family-react-new-2024/static/js/main.bed17073.js",
     "static/js/453.dd53e008.chunk.js": "/family-react-new-2024/static/js/453.dd53e008.chunk.js",
     "static/media/Family-video.mp4": "/family-react-new-2024/static/media/Family-video.ff3d56babd03990ccdcf.mp4",
     "static/media/pexels-golden-jojo-2409038.jpg": "/family-react-new-2024/static/media/pexels-golden-jojo-2409038.e88a745bc273b6f23d23.jpg",
@@ -13,11 +13,11 @@
     "static/media/old divider swirl ornate floral.png": "/family-react-new-2024/static/media/old divider swirl ornate floral.a9aa05b2c807564935cc.png",
     "index.html": "/family-react-new-2024/index.html",
     "main.b06a0607.css.map": "/family-react-new-2024/static/css/main.b06a0607.css.map",
-    "main.7c9f7fea.js.map": "/family-react-new-2024/static/js/main.7c9f7fea.js.map",
+    "main.bed17073.js.map": "/family-react-new-2024/static/js/main.bed17073.js.map",
     "453.dd53e008.chunk.js.map": "/family-react-new-2024/static/js/453.dd53e008.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b06a0607.css",
-    "static/js/main.7c9f7fea.js"
+    "static/js/main.bed17073.js"
   ]
 }
