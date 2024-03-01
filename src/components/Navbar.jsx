@@ -59,6 +59,12 @@ export const Navbar = () => {
                 Galerija
               </Button>
             </Link>
+            <Link to="/ponuda">
+              <Button variant="outlined" color="secondary">
+                {" "}
+                Ponuda
+              </Button>
+            </Link>
             <Link to="/kontakt">
               <Button variant="outlined" color="secondary">
                 {" "}

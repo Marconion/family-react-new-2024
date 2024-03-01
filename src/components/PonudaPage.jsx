@@ -364,7 +364,7 @@ export const PonudaPage = () => {
                 backgroundColor: "transparent",
                 border: "2px solid black",
                 borderRadius: "5px",
-                padding: "0.1rem 1rem",
+                padding: "0 1rem",
               }}>
               {cena}
             </span>{" "}
