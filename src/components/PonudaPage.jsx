@@ -377,7 +377,7 @@ export const PonudaPage = () => {
         <Typography>
           <p>{meni}</p>
         </Typography>
-        <MeniButton />
+        <MeniButton text={"Povratak na početak"} />
         <Divider className={"custom-divider"} />
       </Stack>
 

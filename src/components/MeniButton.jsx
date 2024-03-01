@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export const MeniButton = () => {
+export const MeniButton = (props) => {
   return (
     <div className="button-pos">
       <Link to="/ponuda">
@@ -12,7 +12,7 @@ export const MeniButton = () => {
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}>
-          Povratak na početak
+          {props.text}
         </Button>
       </Link>
     </div>

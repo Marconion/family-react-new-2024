@@ -13,6 +13,7 @@ import { Divider } from "./Divider";
 import velikaSalaImg from "../components/assets/images/gallery-img/Family-11.jpg";
 import malaSalaImg from "../components/assets/images/gallery-img/Family-31.jpg";
 import igraonicaImg from "../components/assets/images/gallery-img/Family-4.jpg";
+import { MeniButton } from "./MeniButton";
 
 export const Onama = () => {
   useEffect(() => {
@@ -95,9 +96,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <Button size="small" variant="outlined">
-                  Galerija
-                </Button>
+                <MeniButton text={"Galerija"} />
               </Link>
             </CardActions>
           </Card>
@@ -119,9 +118,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <Button size="small" variant="outlined">
-                  Galerija
-                </Button>
+                <MeniButton text={"Galerija"} />
               </Link>
             </CardActions>
           </Card>
@@ -145,9 +142,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <Button size="small" variant="outlined">
-                  Galerija
-                </Button>
+                <MeniButton text={"Galerija"} />
               </Link>
             </CardActions>
           </Card>
