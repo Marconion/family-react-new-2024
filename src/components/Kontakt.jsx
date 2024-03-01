@@ -1,4 +1,4 @@
-import { Stack, Typography, Box, Fade } from "@mui/material";
+import { Stack, Typography, Fade } from "@mui/material";
 import React from "react";
 import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
@@ -45,22 +45,22 @@ export const Kontakt = () => {
               }}></iframe>
           </Fade>
           <Divider className="divider-1 custom-divider" />
-          <div class="social">
+          <div className="social">
             <div>
               <p>Možete nas kontaktirati i klikom na linkove ispod</p>
             </div>
-            <div class="social-media-links">
+            <div className="social-media-links">
               <a href="https://www.facebook.com/your.family.event.place">
-                <i class="fa-brands fa-facebook"></i>
+                <i className="fa-brands fa-facebook"></i>
               </a>
               <a href="https://www.instagram.com/family_eventplace/">
-                <i class="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-instagram"></i>
               </a>
               <a href="tel:0649060064">
-                <i class="fa-solid fa-phone"></i>
+                <i className="fa-solid fa-phone"></i>
               </a>
               <a href="mailto:familyeventplace@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope"></i>
               </a>
             </div>
           </div>

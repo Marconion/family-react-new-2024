@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const MeniButton = () => {
   return (
-    <div class="button-pos">
+    <div className="button-pos">
       <Link to="/ponuda">
         <Button
           variant="contained"

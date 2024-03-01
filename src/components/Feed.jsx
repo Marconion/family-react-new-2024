@@ -3,20 +3,16 @@ import React, { useState } from "react";
 import { Divider } from "./Divider";
 import { useEffect } from "react";
 import ImageFadeIn from "./ImageFadeIn";
-import logo from "../components/assets/images/Logo uspravni sa poz.jpeg";
 import { quotes } from "./Quotes";
 import { Link } from "react-router-dom";
 import familyVideo from "../components/assets/videos/Family-video.mp4";
 
 export const Feed = () => {
-  const [logoLoaded, setLogoLoaded] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
   }, []); // This effect runs only once when the component mounts
 
   let randomIndex = Math.floor(Math.random() * 5 + 1);
-  console.log(randomIndex);
 
   const styles = {
     button: {
@@ -63,12 +59,6 @@ export const Feed = () => {
             </Button>
           </Link>
         </Box>
-        {/* <ImageFadeIn
-          src={logo}
-          onLoad={() => setLogoLoaded(true)}
-          style={{ display: logoLoaded ? "block" : "none" }}
-        /> */}
-        {/* <Box maxWidth={"70%"}></Box> */}
       </Stack>
       <Stack sx={{ color: "secondary" }}>
         <div id="lokacija">

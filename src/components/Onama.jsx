@@ -1,13 +1,6 @@
 import React from "react";
 import { Navbar } from "./Navbar";
-import {
-  Typography,
-  Stack,
-  ImageList,
-  ImageListItem,
-  Button,
-  useMediaQuery,
-} from "@mui/material";
+import { Typography, Stack, Button, useMediaQuery } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";

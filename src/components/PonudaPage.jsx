@@ -356,8 +356,20 @@ export const PonudaPage = () => {
         </Stack>
 
         {/* Prikaz cene */}
-        <Typography>
-          <h1>Cena: {cena} evra</h1>
+        <Typography sx={{ marginTop: "1rem" }}>
+          <h1>
+            Cena:{" "}
+            <span
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid black",
+                borderRadius: "5px",
+                padding: "0.1rem 1rem",
+              }}>
+              {cena}
+            </span>{" "}
+            evra
+          </h1>
         </Typography>
         <Divider className={"custom-divider"} />
 
