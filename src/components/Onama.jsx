@@ -96,7 +96,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <MeniButton text={"Galerija"} />
+                <MeniButton text="Galerija" link="/galerija" />
               </Link>
             </CardActions>
           </Card>
@@ -118,7 +118,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <MeniButton text={"Galerija"} />
+                <MeniButton text="Galerija" link="/galerija" />
               </Link>
             </CardActions>
           </Card>
@@ -142,7 +142,7 @@ export const Onama = () => {
             </CardContent>
             <CardActions>
               <Link to="/galerija">
-                <MeniButton text={"Galerija"} />
+                <MeniButton text="Galerija" link="/galerija" />
               </Link>
             </CardActions>
           </Card>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const MeniButton = (props) => {
   return (
     <div className="button-pos">
-      <Link to="/ponuda">
+      <Link to={props.link}>
         <Button
           variant="contained"
           style={{ color: "#FBFADA" }}
