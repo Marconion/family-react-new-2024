@@ -12,12 +12,38 @@ const ponuda = [
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
-          Mešano meso (Ćevapi , Kobasice, Rolovani pileći file, Pileći štapići
-          sa susamom)
+          Mešano meso
+          <ul>
+            <li>Ćevapi</li>
+            <li>Kobasice</li>
+            <li>Rolovani pileći file</li>
+            <li>Pileći štapići sa susamom</li>
+          </ul>
         </li>
-        <li>Selekcija suvomesnatog (Suva pečenica, Suvi vrat, Kulen)</li>
-        <li>Selekcija sireva (Sjenički sir, Gauda, Kajmak)</li>
-        <li>Dve vrste slanog rolata (Zeleni i Crveni)</li>
+        <li>
+          Selekcija suvomesnatog
+          <ul>
+            <li>Suva pečenica</li>
+            <li>Suvi vrat</li>
+            <li>Kulen</li>
+          </ul>
+        </li>
+
+        <li>
+          Selekcija sireva
+          <ul>
+            <li>Sjenički sir</li>
+            <li>Gauda</li>
+            <li>Kajmak</li>
+          </ul>
+        </li>
+        <li>
+          Dve vrste slanog rolata
+          <ul>
+            <li>Zeleni</li>
+            <li>Crveni</li>
+          </ul>
+        </li>
         <li>Domaće pita sa sirom i pečurkama</li>
         <li>Proja</li>
         <li>Mimoza salata</li>
@@ -59,18 +85,50 @@ const ponuda = [
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
-          Mešano meso (Ćevapi , Kobasice, Svinjski vrat, Rolovani pileći file,
-          Pileći štapići sa susamom)
+          Mešano meso
+          <ul>
+            <li>Ćevapi</li>
+            <li>Kobasice</li>
+            <li>Svinjski vrat</li>
+            <li>Rolovani pileći file</li>
+            <li>Pileći štapići sa susamom</li>
+          </ul>
+        </li>
+        <li>
+          Selekcija suvomesnatog
+          <ul>
+            <li>Suva svinjska pečenica</li>
+            <li>Goveđa pršuta</li>
+            <li>Svinjska pršuta</li>
+            <li>Suvi vrat</li>
+            <li>Kulen</li>
+          </ul>
         </li>
         <li>Ćuretina u sosu od vrganja</li>
+
         <li>
-          Selekcija suvomesnatog (Suva svinjska pečenica, Goveđa pršuta,
-          Svinjska pršuta, Suvi vrat, Kulen)
+          Selekcija sireva
+          <ul>
+            <li>Sjenički sir</li>
+            <li>Gauda</li>
+            <li>Gorgonzola</li>
+            <li>Kajmak</li>
+          </ul>
         </li>
-        <li>Selekcija sireva (Sjenički sir, Gauda, Gorgonzola, Kajmak)</li>
-        <li>Dve vrste slanog rolata (Zeleni i Crveni)</li>
         <li>
-          Finger food mix - tortilja sa piletinom, proledne rolinice, kanapei
+          Dve vrste slanog rolata
+          <ul>
+            <li>Zeleni</li>
+            <li>Crveni</li>
+          </ul>
+        </li>
+        <li>
+          Finger food mix
+          <ul>
+            <li>Tortilja sa piletinom</li>
+            <li>Prolećne rolnice</li>
+            <li>Kanapei</li>
+          </ul>
         </li>
         <li>Italijanski štapići - Čeri, mozzarella, masline</li>
         <li>Domaće pite sa sirom i pečurkama</li>
@@ -116,24 +174,55 @@ const ponuda = [
       <p class="p-3">Ponuda hrane</p>
       <ul>
         <li>
-          Mešano meso (Ćevapi , Dimljena vešalica, Kobasice, Rolovani pileći
-          file, Pileći štapići sa susamom)
+          Mešano meso
+          <ul>
+            <li>Ćevapi</li>
+            <li>Kobasice</li>
+            <li>Dimljena vešalica</li>
+            <li>Rolovani pileći file</li>
+            <li>Pileći štapići sa susamom</li>
+          </ul>
         </li>
-        <li>Ćuretina u sosu sa vrganjima</li>
-        <li>Svinjski file u lešniku sa sosom od višanja</li>
         <li>
-          Selekcija suvomesnatog (Suva svinjska pečenica, Goveđa pršuta,
-          Svinjska pršuta, Suvi vrat, Kulen)
+          Selekcija suvomesnatog
+          <ul>
+            <li>Suva svinjska pečenica</li>
+            <li>Goveđa pršuta</li>
+            <li>Svinjska pršuta</li>
+            <li>Suvi vrat</li>
+            <li>Kulen</li>
+          </ul>
+        </li>
+        <li>Ćuretina u sosu od vrganja</li>
+
+        <li>
+          Selekcija sireva
+          <ul>
+            <li>Sjenički sir</li>
+            <li>Gauda</li>
+            <li>Camembert</li>
+            <li>Gorgonzola</li>
+            <li>Parmezan</li>
+            <li>Kajmak</li>
+          </ul>
         </li>
         <li>
-          Selekcija sireva (Sjenički sir, Gauda, Camembert, Gorgonzola,
-          Parmezan, Kajmak)
+          Dve vrste slanog rolata
+          <ul>
+            <li>Zeleni</li>
+            <li>Crveni</li>
+          </ul>
         </li>
-        <li>Dve vrste slanog rolata - (Zeleni i Crveni) </li>
         <li>
-          Finger food mix - tortilja sa piletinom, prolećne rolnice, kanapei sa
-          lososom, grisini sa pršutom
+          Finger food mix
+          <ul>
+            <li>Tortilja sa piletinom</li>
+            <li>Prolećne rolnice</li>
+            <li>Kanapei sa lososom</li>
+            <li>Grisini sa pršutom</li>
+          </ul>
         </li>
+
         <li>Italijanski štapići - Čeri, mozzarella, masline</li>
         <li>Domaće pite sa sirom i pečurkama</li>
         <li>Proja</li>
@@ -146,6 +235,7 @@ const ponuda = [
         <li>Domaća pogača</li>
         <li>Sarajevski somuni, baget</li>
       </ul>
+
       <p class="p-3">Ponuda pića</p>
       <ul>
         <li>Espresso, nes kafa, domaća kafa</li>
@@ -278,6 +368,7 @@ export const PonudaPage = () => {
         <MeniButton />
         <Divider className={"custom-divider"} />
       </Stack>
+
       <Footer />
     </div>
   );

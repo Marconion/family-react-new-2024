@@ -14,55 +14,8 @@ import ImageModal from "./EnlargeableImage";
 import { Divider } from "./Divider";
 import { ScrollButton } from "./ScrollButton";
 import { useEffect } from "react";
-// import { itemData } from "./galleryData";
 
 export const GalleryPage = () => {
-  const itemData = [
-    {
-      img: "./images/gallery-img/Family-1.jpg",
-      title: "img",
-    },
-
-    {
-      img: "./images/gallery-img/Family-7.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-8.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-9.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-10.jpg",
-      title: "img",
-    },
-
-    {
-      img: "./images/gallery-img/Family-15.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-16.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-17.jpg",
-      title: "img",
-    },
-
-    {
-      img: "./images/gallery-img/Family-36.jpg",
-      title: "img",
-    },
-    {
-      img: "./images/gallery-img/Family-37.jpg",
-      title: "img",
-    },
-  ];
-
   const velikaSalaImages = [
     {
       img: "./images/gallery-img/Family-2.jpg",
