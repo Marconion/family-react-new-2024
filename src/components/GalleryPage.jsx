@@ -1,4 +1,4 @@
-import { React, useRef } from "react";
+import { React, useState } from "react";
 import { Navbar } from "./Navbar";
 import {
   Typography,
@@ -7,6 +7,7 @@ import {
   ImageListItem,
   useMediaQuery,
   Grow,
+  SwipeableDrawer,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { Footer } from "./Footer";
