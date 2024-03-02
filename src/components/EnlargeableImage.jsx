@@ -42,32 +42,35 @@ const ImageModal = ({ image, title }) => {
           />
         </CardActionArea>
       </Card>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-image-title"
-        aria-describedby="modal-image-description">
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            width: 350,
-            backgroundColor: "#12372A",
-            border: "1px solid #12372A",
-            padding: 5,
-          }}>
-          <Typography id="modal-image-title" variant="h6" component="h2">
-            {/* {title} */}
-          </Typography>
-          <img
-            src={image}
-            alt={title}
-            style={{ width: "100%", height: "auto", marginTop: 8 }}
-          />
-        </div>
-      </Modal>
+      <div>
+        {/* <img src={image} alt={title} onClick={handleOpen} /> */}
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-image-title"
+          aria-describedby="modal-image-description">
+          <div
+            style={{
+              position: "absolute",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              width: 350,
+              backgroundColor: "#12372A",
+              border: "1px solid #12372A",
+              padding: 5,
+            }}>
+            <Typography id="modal-image-title" variant="h6" component="h2">
+              {/* {title} */}
+            </Typography>
+            <img
+              src={image}
+              alt={title}
+              style={{ width: "100%", height: "auto", marginTop: 8 }}
+            />
+          </div>
+        </Modal>
+      </div>
     </>
   );
 };

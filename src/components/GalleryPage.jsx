@@ -87,6 +87,10 @@ export const GalleryPage = () => {
       title: "img",
     },
     {
+      img: "./images/gallery-img/Family-34.jpg",
+      title: "img",
+    },
+    {
       img: "./images/gallery-img/Family-25.jpg",
       title: "img",
     },
@@ -121,10 +125,7 @@ export const GalleryPage = () => {
       img: "./images/gallery-img/Family-33.jpg",
       title: "img",
     },
-    {
-      img: "./images/gallery-img/Family-34.jpg",
-      title: "img",
-    },
+
     {
       img: "./images/gallery-img/Family-35.jpg",
       title: "img",
