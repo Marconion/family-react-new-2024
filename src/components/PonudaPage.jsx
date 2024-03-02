@@ -374,7 +374,7 @@ export const PonudaPage = () => {
         <Divider className={"custom-divider"} />
 
         {/* Set meniji*/}
-        <Typography>
+        <Typography sx={{ animation: "fadeIn 2s" }}>
           <p>{meni}</p>
         </Typography>
         <MeniButton text={"Povratak na početak"} link={"/ponuda"} />

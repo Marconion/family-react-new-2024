@@ -37,7 +37,10 @@ export const Onama = () => {
           O nama
         </Typography>
         <Divider />
-        <Typography variant="h8" textAlign={"center"}>
+        <Typography
+          variant="h8"
+          textAlign={"center"}
+          sx={{ animation: "fadeIn 2s" }}>
           Family event place je restoran namenjen organizovanju svih vrsta
           porodičnih proslava od 30 do 150 gostiju. U mogućnosti smo da
           organizujemo sve vrste proslava, od dečijih rodjendana i krštenja do

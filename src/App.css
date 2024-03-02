@@ -130,3 +130,12 @@ button.active {
   background-color: #fbfada;
   color: #273133;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

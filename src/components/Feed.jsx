@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import familyVideo from "../components/assets/videos/Family-video.mp4";
 
 export const Feed = () => {
+  const [isVideoLoaded, setVideoLoaded] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
   }, []); // This effect runs only once when the component mounts
@@ -37,13 +39,21 @@ export const Feed = () => {
         alignItems={"center"}>
         <Box sx={{ padding: "0 30px" }}>
           <Divider />
-          <Typography variant="h7" sx={{ fontStyle: "italic" }}>
+          <Typography
+            variant="h7"
+            sx={{ fontStyle: "italic", animation: "fadeIn 2s" }}>
             "{quotes[randomIndex].quote}"
           </Typography>
 
           <Divider className={"custom-divider"} />
           <Stack marginBottom={"5rem"} alignItems={"center"}>
-            <video width={257} height={457} autoPlay loop muted>
+            <video
+              width={257}
+              height={457}
+              autoPlay
+              loop
+              muted
+              style={{ animation: "fadeIn 2s" }}>
               <source src={familyVideo} type="video/mp4" />
             </video>
           </Stack>
