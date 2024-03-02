@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import { useLocation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import {
   Typography,
@@ -15,8 +16,11 @@ import ImageModal from "./EnlargeableImage";
 import { Divider } from "./Divider";
 import { ScrollButton } from "./ScrollButton";
 import { useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 
 export const GalleryPage = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
   const velikaSalaImages = [
     {
       img: "./images/gallery-img/Family-2.jpg",
@@ -150,9 +154,37 @@ export const GalleryPage = () => {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
   const cols = isSmallScreen ? 2 : 3;
 
+  const location = useLocation();
+
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
-  }, []); // This effect runs only once when the component mounts
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => {
+      // Code to go to the next image
+      setCurrentImageIndex((prev) => (prev + 1) % velikaSalaImages.length);
+    },
+    onSwipedRight: () => {
+      // Code to go to the previous image
+      setCurrentImageIndex(
+        (prev) => (prev - 1 + velikaSalaImages.length) % velikaSalaImages.length
+      );
+    },
+    preventDefaultTouchmoveEvent: true,
+    trackMouse: true,
+  });
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
+  // }, []); // This effect runs only once when the component mounts
 
   return (
     <div>
@@ -180,7 +212,11 @@ export const GalleryPage = () => {
             {velikaSalaImages.map((item) => (
               <Grow in timeout={1000}>
                 <ImageListItem key={item.img}>
-                  <ImageModal image={item.img} title={item.title} />
+                  <ImageModal
+                    image={item.img}
+                    title={item.title}
+                    {...handlers}
+                  />
                 </ImageListItem>
               </Grow>
             ))}
@@ -210,25 +246,27 @@ export const GalleryPage = () => {
         </div>
 
         {/* IGRAONICA */}
-        <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
-          <Typography variant="h4">Igraonica</Typography>
-        </Stack>
-        <ImageList
-          variant="quilted"
-          cols={cols}
-          gap={8}
-          sx={{
-            display: { md: "flexbox", lg: "flexbox" },
-            margin: { md: "50px", lg: "50px" },
-          }}>
-          {igraonicaImages.map((item) => (
-            <Grow in timeout={1000}>
-              <ImageListItem key={item.img}>
-                <ImageModal image={item.img} title={item.title} />
-              </ImageListItem>
-            </Grow>
-          ))}
-        </ImageList>
+        <div id="igraonica">
+          <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
+            <Typography variant="h4">Igraonica</Typography>
+          </Stack>
+          <ImageList
+            variant="quilted"
+            cols={cols}
+            gap={8}
+            sx={{
+              display: { md: "flexbox", lg: "flexbox" },
+              margin: { md: "50px", lg: "50px" },
+            }}>
+            {igraonicaImages.map((item) => (
+              <Grow in timeout={1000}>
+                <ImageListItem key={item.img}>
+                  <ImageModal image={item.img} title={item.title} />
+                </ImageListItem>
+              </Grow>
+            ))}
+          </ImageList>
+        </div>
         <Divider className={"custom-divider"} />
       </Stack>
       <ScrollButton />
