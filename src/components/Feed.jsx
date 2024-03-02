@@ -48,8 +48,7 @@ export const Feed = () => {
           <Divider className={"custom-divider"} />
           <Stack marginBottom={"5rem"} alignItems={"center"}>
             <video
-              width={257}
-              height={457}
+              className="responsive-video"
               autoPlay
               loop
               muted

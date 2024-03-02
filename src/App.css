@@ -138,3 +138,15 @@ button.active {
     opacity: 1;
   }
 }
+
+.responsive-video {
+  width: 257px;
+  height: 457px;
+}
+
+@media (min-width: 1200px) {
+  .responsive-video {
+    width: 411.2px;
+    height: 731.2px;
+  }
+}
