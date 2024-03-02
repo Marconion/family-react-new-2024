@@ -310,7 +310,7 @@ export const PonudaPage = () => {
         {/* MENI BUTTONS*/}
         <Stack direction={"row"} spacing={3}>
           <button
-            className={index === 0 ? "active" : ""}
+            className={`${index === 0 ? "active" : ""} button-dropshadow`}
             onClick={() => {
               setMeni(ponuda[0]);
               setIndex(0);
@@ -318,7 +318,7 @@ export const PonudaPage = () => {
             Set meni 1
           </button>
           <button
-            className={index === 1 ? "active" : ""}
+            className={`${index === 1 ? "active" : ""} button-dropshadow`}
             onClick={() => {
               setMeni(ponuda[1]); // First function call
               setIndex(1); // Second function call
@@ -326,7 +326,7 @@ export const PonudaPage = () => {
             Set meni 2
           </button>
           <button
-            className={index === 2 ? "active" : ""}
+            className={`${index === 2 ? "active" : ""} button-dropshadow`}
             onClick={() => {
               setMeni(ponuda[2]);
               setIndex(2);
@@ -340,14 +340,14 @@ export const PonudaPage = () => {
         {/* VREME BUTTONS */}
         <Stack direction={"row"} spacing={3}>
           <button
-            className={vreme === 0 ? "active" : ""}
+            className={`${vreme === 0 ? "active" : ""} button-dropshadow`}
             onClick={() => {
               setVreme(0); // Second function call
             }}>
             3 sata
           </button>
           <button
-            className={vreme === 1 ? "active" : ""}
+            className={`${vreme === 1 ? "active" : ""} button-dropshadow`}
             onClick={() => {
               setVreme(1);
             }}>

@@ -1,16 +1,15 @@
 body {
   background-color: #fbfada;
 
-  /* background-image: url("https://www.transparenttextures.com/patterns/diagonal-striped-brick.png"); */
   background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
 
 .img {
   filter: drop-shadow(10px 0 2rem #12372a);
   height: 550px;
-
-  /* padding: 10px 0; */
-  /* filter: drop-shadow(0 0 2rem black); */
+}
+.button-dropshadow {
+  filter: drop-shadow(2px 2px 2px #436850);
 }
 
 .image-container {
