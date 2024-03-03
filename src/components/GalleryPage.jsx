@@ -19,8 +19,6 @@ import { useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 
 export const GalleryPage = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const velikaSalaImages = [
     {
       img: "./images/gallery-img/Family-2.jpg",
@@ -168,25 +166,6 @@ export const GalleryPage = () => {
     }
   }, [location]);
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => {
-      // Code to go to the next image
-      setCurrentImageIndex((prev) => (prev + 1) % velikaSalaImages.length);
-    },
-    onSwipedRight: () => {
-      // Code to go to the previous image
-      setCurrentImageIndex(
-        (prev) => (prev - 1 + velikaSalaImages.length) % velikaSalaImages.length
-      );
-    },
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true,
-  });
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0); // Scroll to the top when the component mounts or when the location changes
-  // }, []); // This effect runs only once when the component mounts
-
   return (
     <div>
       <Navbar />
@@ -213,11 +192,7 @@ export const GalleryPage = () => {
             {velikaSalaImages.map((item) => (
               <Grow in timeout={1000}>
                 <ImageListItem key={item.img}>
-                  <ImageModal
-                    image={item.img}
-                    title={item.title}
-                    {...handlers}
-                  />
+                  <ImageModal image={item.img} title={item.title} />
                 </ImageListItem>
               </Grow>
             ))}
