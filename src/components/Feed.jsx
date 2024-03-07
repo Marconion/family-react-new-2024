@@ -6,6 +6,8 @@ import ImageFadeIn from "./ImageFadeIn";
 import { quotes } from "./Quotes";
 import { Link } from "react-router-dom";
 import familyVideo from "../components/assets/videos/Family-video.mp4";
+import bwImage1 from "../components/assets/images/gallery-img/Family-11.jpg";
+import bwImage2 from "../components/assets/images/gallery-img/Family-13.jpg";
 
 export const Feed = () => {
   const [isVideoLoaded, setVideoLoaded] = useState(false);
@@ -37,6 +39,23 @@ export const Feed = () => {
         marginBottom={"6rem"}
         padding={"0.5rem"}
         alignItems={"center"}>
+        <img
+          src={bwImage1}
+          alt="bwImage1"
+          className="responsive-image"
+          style={{
+            position: "fixed",
+            objectFit: "cover",
+            // filter: "grayscale(50%)",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -39%)",
+            // scale: "0.95",
+            opacity: "0.15",
+            zIndex: "-1",
+            margin: "-2px",
+          }}
+        />
         <Box sx={{ padding: "0 30px" }}>
           <Divider />
           <Typography

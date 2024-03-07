@@ -288,10 +288,6 @@ export const GalleryPage = () => {
       title: "img",
     },
     {
-      img: "./images/gallery-img/New images/Family-slika-17.jpg",
-      title: "img",
-    },
-    {
       img: "./images/gallery-img/New images/Family-slika-18.jpg",
       title: "img",
     },
