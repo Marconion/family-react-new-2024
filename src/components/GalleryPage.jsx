@@ -136,15 +136,31 @@ export const GalleryPage = () => {
 
   const igraonicaImages = [
     {
-      img: "./images/gallery-img/Family-4.jpg",
+      img: "./images/gallery-img/Family-slika-38.jpg",
       title: "img",
     },
     {
-      img: "./images/gallery-img/Family-5.jpg",
+      img: "./images/gallery-img/Family-slika-39.jpg",
       title: "img",
     },
     {
-      img: "./images/gallery-img/Family-6.jpg",
+      img: "./images/gallery-img/Family-slika-40.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-slika-46.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-slika-47.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-slika-53.jpg",
+      title: "img",
+    },
+    {
+      img: "./images/gallery-img/Family-slika-54.jpg",
       title: "img",
     },
   ];
@@ -226,6 +242,7 @@ export const GalleryPage = () => {
           <Stack margin={"30px 0 10px 0"} alignItems={"center"}>
             <Typography variant="h4">Igraonica</Typography>
           </Stack>
+          <img src={"./images/gallery-img/Family-70.jpg"} alt="img" />
           <ImageList
             variant="quilted"
             cols={cols}

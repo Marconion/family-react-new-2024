@@ -18,7 +18,7 @@ import { Kontakt } from "./components/Kontakt";
 
 const router = createHashRouter([
   {
-    path: "/*",
+    path: "/",
     element: <App />,
   },
   {
