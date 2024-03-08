@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/family-react-new-2024/static/css/main.fdfc7256.css",
+    "main.css": "/family-react-new-2024/static/css/main.836e67f9.css",
     "main.js": "/family-react-new-2024/static/js/main.332b7a5d.js",
     "static/js/453.dd53e008.chunk.js": "/family-react-new-2024/static/js/453.dd53e008.chunk.js",
     "static/media/Family-video.mp4": "/family-react-new-2024/static/media/Family-video.ff3d56babd03990ccdcf.mp4",
@@ -12,12 +12,12 @@
     "static/media/Family-logo-gold-white.png": "/family-react-new-2024/static/media/Family-logo-gold-white.987820ee977e24d19d8a.png",
     "static/media/old divider swirl ornate floral.png": "/family-react-new-2024/static/media/old divider swirl ornate floral.a9aa05b2c807564935cc.png",
     "index.html": "/family-react-new-2024/index.html",
-    "main.fdfc7256.css.map": "/family-react-new-2024/static/css/main.fdfc7256.css.map",
+    "main.836e67f9.css.map": "/family-react-new-2024/static/css/main.836e67f9.css.map",
     "main.332b7a5d.js.map": "/family-react-new-2024/static/js/main.332b7a5d.js.map",
     "453.dd53e008.chunk.js.map": "/family-react-new-2024/static/js/453.dd53e008.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdfc7256.css",
+    "static/css/main.836e67f9.css",
     "static/js/main.332b7a5d.js"
   ]
 }
