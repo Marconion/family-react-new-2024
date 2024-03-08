@@ -1,20 +1,22 @@
 body {
   background-color: #fbfada;
+
+  background-image: url("https://www.transparenttextures.com/patterns/dimension.png");
 }
-body::before {
+/* body::after {
   content: "";
+  background-image: url("./components/assets/images/gallery-img/");
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("./components/assets/images/gallery-img/Family-11.jpg");
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   filter: grayscale(100%);
-  opacity: 0.15;
-  z-index: -1;
-}
+} */
 
 .img {
   filter: drop-shadow(10px 0 2rem #12372a);
